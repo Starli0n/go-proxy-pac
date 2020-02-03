@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+
+  go-proxy-pac:
+    build:
+      context: ./
+    image: go-proxy-pac:latest
+    container_name: go-proxy-pac
+    hostname: go-proxy-pac
+    ports:
+      - "8080:8080"
+    restart: always
+
